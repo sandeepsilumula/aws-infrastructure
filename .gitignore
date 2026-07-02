@@ -1,0 +1,6 @@
+# Ignore the hidden terraform plugin directory
+.terraform/
+
+# Ignore local state files (another best practice!)
+*.tfstate
+*.tfstate.backup
