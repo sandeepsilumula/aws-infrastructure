@@ -4,7 +4,7 @@ on:
     branches:
       - main
   job:
-    build:
+    build-infrastructure:
       runs-on: ubuntu-latest
       steps:
         - name: Checkout code
