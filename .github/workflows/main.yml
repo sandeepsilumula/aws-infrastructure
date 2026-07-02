@@ -31,9 +31,9 @@ jobs:
       - name: Terraform plan
         run: terraform plan
 
-terraform-apply:
+  terraform-apply:
     needs: terraform-plan
-    env: production
+    environment: production
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -53,9 +53,6 @@ terraform-apply:
 
       - name: Terraform init
         run: terraform init
-
-      - name: Terraform plan
-        run: terraform plan
 
       - name: Terraform apply
         run: terraform apply -auto-approve
